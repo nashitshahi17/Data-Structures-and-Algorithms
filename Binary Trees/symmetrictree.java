@@ -1,5 +1,4 @@
-// Leetcode 101
-
+// Leetcode 101 Symmetrictree
 public class symmetrictree {
     public static class Node {
         int val;

@@ -49,3 +49,33 @@ public class zigzaglevel {
     }
     
 }
+
+// Optimized
+// class Solution {
+//     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+//         List<List<Integer>> results = new ArrayList<>();
+//         if(root == null) return results;
+//         List<TreeNode> current = new ArrayList<>();
+//         current.add(root);
+//         List<TreeNode> next = null;
+//         int dir = 0;
+//         while(!current.isEmpty()) {
+//             next = new ArrayList<>();
+//             List<Integer> list = new ArrayList<>();
+//             for(TreeNode node : current) {
+//                 if(dir == 0) {
+//                     if(node.left != null) next.add(0, node.left);
+//                     if(node.right != null) next.add(0, node.right);
+//                 } else {
+//                     if(node.right != null) next.add(0, node.right);
+//                     if(node.left != null) next.add(0, node.left);
+//                 }
+//                 list.add(node.val);
+//             }
+//             dir = dir == 0 ? 1 : 0;
+//             results.add(list);
+//             current = next;
+//         }
+//         return results;
+//     }
+// }

@@ -1,4 +1,4 @@
-// Leetcode 105 - Construct a Binary Tree from Post order and Inorder 
+// Leetcode 105 - 
 public class treefrompostandin{
     public static class Node {
         int val;

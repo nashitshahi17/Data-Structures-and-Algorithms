@@ -19,7 +19,6 @@ public class pathsum3 {
         if(root==null)return 0;
         int count  = noOfPaths(root,(long)targetSum);
         count+= (pathSum(root.left,targetSum) + pathSum(root.right,targetSum));
-        
         return count;
     }
 }

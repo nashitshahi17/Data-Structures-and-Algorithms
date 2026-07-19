@@ -17,6 +17,7 @@ public class rotatebyK {
             arr[i] = sc.nextInt();
         }
         int k = sc.nextInt();
+        sc.close();
         rev(arr,0,n-1);
         rev(arr,0,k-1);
         rev(arr,k,n-1);

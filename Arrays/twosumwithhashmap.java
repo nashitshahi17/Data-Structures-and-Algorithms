@@ -24,6 +24,7 @@ public class twosumwithhashmap {
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
         }
+        sc.close();
         System.out.println(Arrays.toString(sum(arr,k)));
     }
 }

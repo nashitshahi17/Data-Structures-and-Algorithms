@@ -24,6 +24,7 @@ class majorityElement{
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
         }
+        sc.close();
         System.out.print(majele(arr));
     }
 }

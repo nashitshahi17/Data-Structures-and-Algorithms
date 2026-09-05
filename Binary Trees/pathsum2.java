@@ -6,7 +6,7 @@ public class pathsum2 {
         Node left;
         Node right;
         Node(int val){
-            this.val;
+            this.val=val;
         }
     }
     public static void helper(List<List<Integer>> ans,List<Integer> arr, Node root,int sum){

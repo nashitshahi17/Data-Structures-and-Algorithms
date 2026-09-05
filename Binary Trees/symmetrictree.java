@@ -15,10 +15,10 @@ public class symmetrictree {
         if(p.val!=q.val) return false;
         return isSame(p.left,q.left) && isSame(p.right,q.right);
     }
-    public TreeNode invert(Node root){
+    public Node invert(Node root){
         if(root==null) return root;
-        TreeNode l = root.left;
-        TreeNode r = root.right;
+        Node l = root.left;
+        Node r = root.right;
         root.left = invert(r);
         root.right = invert(l);
         return root;

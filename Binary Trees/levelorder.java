@@ -11,7 +11,9 @@ class levelorder{
     public static List<List<Integer>> level(Node root){
         List<List<Integer>> res = new ArrayList<>();
         Deque<Node> q = new ArrayDeque<>();
-        q.addLast(root);
+        if(root!=null){
+            q.addLast(root);
+        }
         while(!q.isEmpty()){
             int length = q.size();
             List<Integer> l = new ArrayList<>();

@@ -34,9 +34,9 @@ public class zigzagorder {
         return res;
     }
     public static Node buildtree(Integer[] arr){
-        // if(arr.length==0 || arr==null || arr[0]==null){
-        //     return null;
-        // }
+        if(arr.length==0 || arr==null || arr[0]==null){
+            return null;
+        }
         Node root = new Node(arr[0]);
         int i = 1;
         Deque<Node> q = new ArrayDeque<>();
